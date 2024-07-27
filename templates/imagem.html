@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<div>
+    <h2>Unidade Imagem - abaixo ou igual a 10%</h2>
+        <table  id="equipamentos">
+            <tr>
+                <th>IP</th>
+                <th>Serial</th>
+                <th>Modelo</th>
+                <th>Local</th>
+                <th>Data</th>
+                <th>Imagem</th>
+            </tr>
+            {% for row in dataI %}
+            <tr>
+                <td><a href = http://{{row[0]}} target="_blank"</a>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+</div>
+
+{% endblock %}

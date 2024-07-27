@@ -1,0 +1,10 @@
+STRING: "BRBSR8R0CK"
+STRING: "Preto HP W9008MC."
+STRING: "Kit do alimentador de documentos HP B5L52A."
+STRING: "Limpar cilindros do alim. documentos HP None."
+INTEGER: 74
+INTEGER: 97
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100

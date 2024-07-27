@@ -1,0 +1,53 @@
+{% extends 'local_base.html' %}
+{% include 'local_header.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<div>
+    <h2>Visão Geral</h2>
+    <style>
+        .highlight {
+            color: red;
+        }
+    </style>
+    <table id="equipamentos">
+        <thead>
+            <tr>
+                <th>IP</th>
+                <th>Serial</th>
+                <th>Modelo</th>
+                <th>Local</th>
+                <th>Data</th>
+                <th>Preto</th>
+                <th>Ciano</th>
+                <th>Magenta</th>
+                <th>Amarelo</th>
+                <th>Fusor</th>
+                <th>Imagem</th>
+                <th>Belt</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td><a href="http://{{ row[0] }}" target="_blank">{{ row[0] }}</a></td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }} {{ row[5] }}</td>
+                <td class="{{ 'highlight' if row[6] <= 10 else '' }}">{{ row[6] }}</td>
+                <td class="{{ 'highlight' if row[7] <= 10 else '' }}">{{ row[7] }}</td>
+                <td class="{{ 'highlight' if row[8] <= 10 else '' }}">{{ row[8] }}</td>
+                <td class="{{ 'highlight' if row[9] <= 10 else '' }}">{{ row[9] }}</td>
+                <td class="{{ 'highlight' if row[10] <= 10 else '' }}">{{ row[10] }}</td>
+                <td class="{{ 'highlight' if row[11] <= 10 else '' }}">{{ row[11] }}</td>
+                <td class="{{ 'highlight' if row[12] <= 10 else '' }}">{{ row[12] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

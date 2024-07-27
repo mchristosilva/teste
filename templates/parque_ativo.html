@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<style>
+    .highlight {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+
+<div>
+    <h2>Visão Geral</h2>
+    <table id="equipamentos">
+        <tr>
+            <th>IP</th>
+            <th>Serial</th>
+            <th>Modelo</th>
+            <th>Local</th>
+            <th>Data</th>
+            <th>Preto</th>
+            <th>Ciano</th>
+            <th>Magenta</th>
+            <th>Amarelo</th>
+            <th>Fusor</th>
+            <th>Imagem</th>
+            <th>Belt</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td><a href="http://{{ row[0] }}" target="_blank">{{ row[0] }}</a></td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            {% for value in row[5:12] %}
+                {% if value|int <= 10 %}
+                    <td class="highlight">{{ value }}</td>
+                {% else %}
+                    <td>{{ value }}</td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

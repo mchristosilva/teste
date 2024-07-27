@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+#titulohead :visited, #titulohead :link, #titulohead :hover{
+  text-decoration: none;
+  color:black;
+}
+
+p{
+  padding: 25px;
+  text-align: center;
+}
+ h1 {
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+    padding: 15px;
+  }
+ h2 {
+    background-color: #004747;
+    color: #f2f2f2;
+    border-collapse: collapse;
+    text-align: center;
+    font-size:medium;
+    padding: 10px;
+  }
+  
+ #equipamentos {
+    font-size: small;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #equipamentos td, #equipamentos th {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  
+  #equipamentos tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #equipamentos tr:hover {background-color: #ddd;}
+  
+  #equipamentos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+ td {
+  text-align: center;
+ }
+
+ 
+ ul {
+  /* position: fixed; */
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #04AA6D;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #38444d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(204, 204, 204);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #04AA6D;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#texto-select, #button-select {
+  border-style: none;
+  width: 100%;
+}
+

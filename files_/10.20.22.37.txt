@@ -1,0 +1,10 @@
+STRING: "BRBSN2RKQM"
+STRING: "Cartucho preto HP W9008MC."
+STRING: "Kit aliment. documentos HP B5L52A."
+STRING: "Limpar cilindros do alim. documentos HP None."
+INTEGER: 40
+INTEGER: 92
+INTEGER: 83
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100

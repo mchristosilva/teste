@@ -1,0 +1,24 @@
+{% include 'header.html' %}
+
+<!-- {% block title %}Estoque Consolidado{% endblock %} -->
+
+{% block body %}
+
+<div>
+    <h2>Visão Geral - Toners</h2>
+    <table  ID="equipamentos">
+        <tr>
+            <th>Modelo</th>
+            <th>Qtd</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}
+</html>

@@ -1,0 +1,25 @@
+STRING: "BRBSP9Y0CL"
+STRING: "Cartucho preto HP W9060MC."
+STRING: "Cartucho ciano HP W9061MC."
+STRING: "Cartucho magenta HP W9063MC."
+STRING: "Cartucho amarelo HP W9062MC."
+STRING: "Kit do fusor HP 110V-B5L35A, 220V-B5L36A."
+STRING: "Unidade de coleta de toner HP B5L37A."
+STRING: "Kit aliment. documentos HP B5L52A."
+STRING: "Limpar cilindros do alim. documentos HP None."
+INTEGER: 10
+INTEGER: 12
+INTEGER: 13
+INTEGER: 77
+INTEGER: 22
+INTEGER: -3
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: -2
+INTEGER: 100
+INTEGER: 100

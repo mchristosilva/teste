@@ -1,0 +1,34 @@
+{% include 'header.html' %}
+
+<!-- {% block title %}Estoque Consolidado{% endblock %} -->
+
+{% block body %}
+
+<div>
+    <h2>Estoque de Toners - Registro de Saídas</h2>
+    <table  ID="equipamentos">
+        <tr>
+            <th>Modelo</th>
+            <th>Qtd</th>
+            <th>Data</th>
+            <th>Motivo Troca</th>
+            <th>Série Impressora</th>
+            <th>Série Toner</th>
+            <th>Chamado</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+            <td>{{row[4]}}</td>
+            <td>{{row[5]}}</td>
+            <td>{{row[6]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}
+</html>

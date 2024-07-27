@@ -1,0 +1,24 @@
+{% extends 'local_base.html' %}
+
+{% block title %}HSJ - Printers{% endblock %}
+
+{% block body %}
+    <div id="head">
+        <h1 id="titulohead">HSJ - Monitoramento</h1>
+        <!-- <img id="imagemhead" src="{{url_for('static',filename = '/img/Logo_hsj_rio.png')}}" height="17%" width="17%"> -->
+    </div>
+    <div class="container">
+        <nav id="menu">
+            <ul>
+                <li><a href="/">Visão Geral</a></li>
+                <li><a href="/black">Impressoras Mono</a></li>
+                <li><a href="/color">Impressoras Color</a></li>
+                <li><a href="/fusor">Unidade Fusora</a></li>
+                <li><a href="/imagem">Unidade Imagem</a></li>
+                <li><a href="/belt">Belt</a></li>
+                <li><a href="/usb">Não monitoradas</a></li>
+                <li><a href="/backups">Backups</a></li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

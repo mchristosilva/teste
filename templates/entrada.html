@@ -1,0 +1,62 @@
+{% include 'header.html' %}
+{% block body %}
+
+<div>
+    <h2>Estoque de Toners - Entrada</h2>
+    <form class="form-inline" method="POST" action="{{ url_for('entrada') }}">
+        <table id="equipamentos" class="table">
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-linhas">
+                <tr class="linha">
+                    <td>
+                        <select name="modelo_toner[]" class="form-control">
+                            {% for data in data %}
+                            <option value="{{ data[0] }}">{{ data[0] }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" required name="quantidade_toner[]" class="form-control">
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="removeLinha(this)">-</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" onclick="addLinha()">Adicionar Linha</button>
+        <button type="submit" class="btn btn-success">Gravar</button>
+    </form>
+</div>
+
+<script>
+    function addLinha() {
+        var tabela = document.getElementById('tabela-linhas');
+        var linha = document.querySelector('.linha');
+        var novaLinha = linha.cloneNode(true);
+        
+        // Limpar os valores dos campos da nova linha
+        novaLinha.querySelectorAll('input').forEach(input => input.value = '');
+        
+        tabela.appendChild(novaLinha);
+    }
+
+    function removeLinha(button) {
+        var tabela = document.getElementById('tabela-linhas');
+        var linhas = tabela.querySelectorAll('.linha');
+        
+        if (linhas.length > 1) {
+            tabela.removeChild(button.closest('tr'));
+        } else {
+            alert('Pelo menos uma linha deve permanecer.');
+        }
+    }
+</script>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+STRING: "BRBSR8R04L"
+STRING: "Preto HP CF289."
+STRING: "Kit do alimentador de documentos HP B5L52A."
+STRING: "Limpar cilindros do alim. documentos HP None."
+INTEGER: 77
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100

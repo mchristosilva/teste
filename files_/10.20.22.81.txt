@@ -1,0 +1,13 @@
+STRING: "BRBSQ9Y026"
+STRING: "Cartucho preto HP W9004MC."
+STRING: "Kit de manuten....o HP 110V-J8J87A, 220V-J8J88A."
+STRING: "Kit aliment. documentos HP J8J95A."
+STRING: "Limpar cilindros do alim. documentos HP None."
+INTEGER: 37
+INTEGER: 0
+INTEGER: 93
+INTEGER: 72
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100

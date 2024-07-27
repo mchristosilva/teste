@@ -1,0 +1,10 @@
+STRING: "BRBSN356R1"
+STRING: "Cartucho preto HP W9008MC."
+STRING: "Kit aliment. documentos HP B5L52A."
+STRING: "Limpar cilindros do alim. documentos HP None."
+INTEGER: 74
+INTEGER: 96
+INTEGER: 92
+INTEGER: 100
+INTEGER: 100
+INTEGER: 100
