@@ -52,7 +52,11 @@ p{
     background-color: #04AA6D;
     color: white;
   }
-
+  .highlight {
+    color: red;
+    font-weight: bold;
+}
+  
  td {
   text-align: center;
  }

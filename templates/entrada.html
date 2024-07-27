@@ -16,6 +16,7 @@
                 <tr class="linha">
                     <td>
                         <select name="modelo_toner[]" class="form-control">
+                            <option value="">Selecione um modelo</option>
                             {% for data in data %}
                             <option value="{{ data[0] }}">{{ data[0] }}</option>
                             {% endfor %}
@@ -43,6 +44,7 @@
         
         // Limpar os valores dos campos da nova linha
         novaLinha.querySelectorAll('input').forEach(input => input.value = '');
+        novaLinha.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
         
         tabela.appendChild(novaLinha);
     }
@@ -60,3 +62,4 @@
 </script>
 
 {% endblock %}
+

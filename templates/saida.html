@@ -19,6 +19,7 @@
                 <tr class="linha">
                     <td>
                         <select name="equipamento_toner[]" class="form-control">
+                            <option value="">Selecione um modelo</option>
                             {% for equipamento in equipamentos %}
                             <option value="{{ equipamento[0] }}">{{ equipamento[0] }}</option>
                             {% endfor %}
@@ -26,6 +27,7 @@
                     </td>
                     <td>
                         <select name="status_toner[]" class="form-control">
+                            <option value="">Selecione a condição</option>
                             {% for stat in status %}
                             <option value="{{ stat[0] }}">{{ stat[0] }}</option>
                             {% endfor %}
@@ -33,6 +35,7 @@
                     </td>
                     <td>
                         <select name="serie_equipamento[]" class="form-control">
+                            <option value="">Selecione o serial</option>
                             {% for serie in series %}
                             <option value="{{ serie[0] }}">{{ serie[0] }}</option>
                             {% endfor %}
@@ -81,3 +84,4 @@
 </script>
 
 {% endblock %}
+
